@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: url(Scr/background_vector_template_design_3.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* main box */
+.box-wrap{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* boxes */
+.box{
+    width: 300px;
+    height: 300px;
+    border: 2px solid #ffffff;
+    transition: 0.6s ease;
+    cursor: pointer;
+}
+
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* hover */
+.box-wrap:hover > :not(:hover){
+    opacity: 0.3;
+}
